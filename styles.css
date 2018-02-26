@@ -1,0 +1,284 @@
+/*TODO:    HIDE OVERFLOW Y,         */
+
+
+
+.visible{
+	visibility: visible;
+}
+
+.invisible{
+	visibility: initial;	
+}
+
+.aboutMeWrapper{
+	background-image: url("images/background65.jpg" );
+	-webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 20vh;
+    padding-right: 13vw;
+    padding-left: 13vw;
+    padding-bottom: 0px;
+    /*padding-top: 56.25%; 
+     (img-height / img-width * container-width) */
+                /* (853 / 1280 * 100) */
+}
+
+.introWrapper{
+    background: linear-gradient(#041c29,#08486B);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 0px;
+    /*padding-top: 56.25%; 
+     (img-height / img-width * container-width) */
+                /* (853 / 1280 * 100) */
+}
+
+.projectsWrapper{
+    background: linear-gradient(#09486b,#ecd091);
+    /*background: #ebcf90;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 35px;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-bottom: 0px;
+    /*padding-top: 56.25%; 
+     (img-height / img-width * container-width) */
+                /* (853 / 1280 * 100) */
+}
+
+#introCol{
+    padding: 0px !important;
+    margin: 0px !important;
+
+}
+
+#projectsCol{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+.mainTitle{
+    margin-top: 25vh;
+    margin-bottom: 5vh;
+    font-family: 'Pridi', serif;
+    font-size: 75px;
+    color: #ffef9b;
+    line-height: 75%;
+}
+
+.subTitle{
+    line-height: 100%;
+    font-size: 35px;
+    color: #ffef9b;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.centerIt{
+    margin:0 auto;
+    text-align: center;
+}
+
+#aboutMeCol{
+	padding: 0px !important;
+	margin: 0px !important;
+
+}
+
+.aboutMeHeader{
+	font-size: 25px;
+	border-bottom: 2px solid #12849f;
+	margin-top: 20px;
+	margin-bottom: 5px;
+    font-family: 'Pridi', serif;
+}
+
+.aboutMeContent{
+	margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutMeCard{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+    opacity: 0.90;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+	margin: 0 auto;
+    margin-bottom: 15vh;
+    padding: 20px;
+    padding-right: 65px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	animation-duration: .75s;
+
+}
+
+
+
+.container-fluid {
+    overflow-x: hidden;
+}
+
+.card{
+    background:white;
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.25), 5px 5px 15px rgba(0,0,0,0.25),-5px 5px 15px rgba(0,0,0,0.25), 5px -5px 15px rgba(0,0,0,0.25) ;
+    height: 100%;
+
+}
+.cardType{
+    font-family: 'Pridi', serif;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    line-height: 75%;
+    margin-bottom: 5px;
+
+}
+.cardImage{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    display: contain;
+}
+
+.cardTitle{
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 7px;
+    padding-bottom: 0px;
+    margin-bottom: 2px;
+    width: 100%;
+    text-align: center;
+    line-height: 75%;
+    font-size: 30px;
+    font-family: 'Pridi', serif;
+    background-color: white;
+}
+
+.cardText{
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: white;
+    max-width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12px;
+
+}
+
+#projectCard1{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+
+
+}
+
+#projectCard2{
+    width: 100%;
+    padding-left: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 1em;
+}
+
+#projectCard3{
+    width: 100%;
+    padding-left: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 1em;
+
+
+}
+
+
+#introArrow{
+    font-size:2em; 
+    color:#ffef9b;
+    margin-top: 7vh; 
+    display: inline-block;
+    transform: scale(2.25,1.5);
+    -webkit-animation: mover 1.25s infinite  alternate;
+    -moz-animation: mover 1.25s infinite  alternate;
+    -o-animation: mover 1.25s infinite  alternate;
+    animation: mover 1.25s infinite  alternate;
+}
+
+
+#introArrow:hover{ 
+    font-size: 2.2em; 
+    color:white;
+}
+
+.aboutMeButton{
+    margin: 0px auto;
+    display: block;
+    background:white;
+    font-size: 20px;
+    font-family: 'Pridi', serif;
+    opacity: 0.90;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+    color: #0a415f;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 0px;
+
+}
+
+.aboutMeButton:hover{
+    margin: 0px auto;
+    display: block;
+    background:#0a4968;
+    font-size: 20px;
+    font-family: 'Pridi', serif;
+    opacity: 0.90;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+    color: #e9ce90;
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.4), 5px 5px 15px rgba(0,0,0,0.4),-5px 5px 15px rgba(0,0,0,0.4), 5px -5px 15px rgba(0,0,0,0.4) ;
+    border: 0px;
+
+}
+
+
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+@-moz-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+@-o-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
