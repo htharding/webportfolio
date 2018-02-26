@@ -145,6 +145,15 @@
     height: 100%;
 
 }
+
+.card:hover{
+	transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transition-duration: 0.2s;
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.4), 5px 5px 15px rgba(0,0,0,0.4),-5px 5px 15px rgba(0,0,0,0.4), 5px -5px 15px rgba(0,0,0,0.4) ;
+ 	cursor: pointer;
+
+}
 .cardType{
     font-family: 'Pridi', serif;
     font-size: 25px;
@@ -200,17 +209,19 @@
 
 #projectCard2{
     width: 100%;
-    padding-left: 1em;
+    height: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 1em;
     padding-right: 1em;
 }
 
 #projectCard3{
     width: 100%;
-    padding-left: 1em;
+    height: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 1em;
     padding-right: 1em;
 
 

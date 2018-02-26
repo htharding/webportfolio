@@ -298,5 +298,5 @@ $("a[href^='#']").click(function(e) {
 
 	$("body, html").animate({
 		scrollTop: position
-	}, 1350 );
+	}, 2000 );
 });
