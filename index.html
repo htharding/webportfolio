@@ -1,6 +1,19 @@
 <!doctype html>
 <html lang="en">
 	<head>
+    <!-- google analytics stuffs-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114952259-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114952259-1');
+    </script>
+
+
     	<!-- Required meta tags -->
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,6 +27,12 @@
 		<title>Hunter Harding</title>
   </head>
   <body>
+    <div id="topHeader" class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse justify-content-end">
+      <img id="github" class="navbarIcon animated invisible" src="images/github.png" alt="GitHub" data-toggle="tooltip" title="GitHub" onclick="window.open('http://www.github.com/htharding', '_blank');">
+      <img id="twitter" class="navbarIcon animated invisible" src="images/twitter.png" alt="Twitter" data-toggle="tooltip" title="Twitter" onclick="window.open('http://www.twitter.com/hthazard', '_blank');">
+      <img id="linkedin" class="navbarIcon animated invisible" src="images/linkedin.png" alt="LinkedIn" data-toggle="tooltip" title="LinkedIn" onclick="window.open('www.linkedin.com/in/hunter-harding', '_blank');">
+      <img id="resume" class="navbarIcon animated invisible" src="images/resume.png" alt="Resume" data-toggle="tooltip" title="Resume" onclick="window.open('http://www.hunterharding.com/images/HunterHardingResume.pdf', '_blank');">
+    </div>
   	<div class="container-fluid">
       <div class="row">
         <div id="introCol" class="col-md-12">
@@ -32,29 +51,37 @@
   		<div class="row">
     			<div name="aboutMeCol" id="aboutMeCol" class="col-md-12">
        				<div class="aboutMeWrapper">
-       					<div class="aboutMeCard animated invisible">
+       					<div id="aboutMeCard" class="aboutMeCard animated invisible">
        						<div class="row">
-       							<div class="col-md-5">
-       								<h1>Image Here</h1>
+       							<div class="col-md-5 my-auto">
+       								<img id="animatedPortrait" class="img-fluid" src="images/hunterharding.gif" alt="Portrait">
        							</div>
        							<div class="col-md-7">
        								<div class="aboutMeHeader">
        									About Me
        								</div>
        								<div class="aboutMeContent">
-       									I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW I really like FISH WOW
+       									My name is <b>Hunter Harding</b>, and I'm a <b>Computer Science</b> student at <b>University of Wisconsin - Green Bay</b>. My passion for programming urges me to go <b>above and beyond</b> the content in my classes, meaning that every day I <b>dive</b> deeper into various technologies that most of my peers have yet to experience. I started <b>programming</b> at the <b>age of 15</b> for a computer game using a modified version of <b>LUA</b>, and since then, I've <b>progressed</b> to <b>powerful</b> languages like <b>Python</b> and <b>widespread</b> languages like <b>JavaScript</b>. I am now teaching myself the MEVN (<b>MongoDB</b>, <b>Express</b>, <b>Vue.js</b>, <b>Node.js</b>) stack so that I can build <b>robust</b> systems and <b>interactive</br> user-experiences</b>. Outside of programming, I love maintaining my <b>55-gallon aquarium</b>, riding ski-lifts with my <b>snowboard</b>, and telling myself that I'm good at <b>photography</b>.
        								</div>
        								<div class="aboutMeHeader">
        									Languages, Frameworks, and Libraries
        								</div>
-       								<div class="aboutMeContent">
-       									KEWL ICONS HERE YEAH
+       								<div class="aboutMeFrameworks">
+       									<img class="navbarIcon" src="images/python.png" alt="Python" data-toggle="tooltip" data-placement="bottom" title="Python" onclick="window.open('https://www.python.org/', '_blank');">
+                        <img class="navbarIcon" src="images/java.png" alt="Java" data-toggle="tooltip" data-placement="bottom" title="Java" onclick="window.open('https://java.com/en/download/', '_blank');">
+                        <img class="navbarIcon" src="images/lua.png" alt="Lua" data-toggle="tooltip" data-placement="bottom" title="Lua" onclick="window.open('https://www.lua.org/', '_blank');">
+                        <img class="navbarIcon" src="images/js.png" alt="JavaScript" data-toggle="tooltip" data-placement="bottom" title="JavaScript" onclick="window.open('https://www.javascript.com/', '_blank');">
+                        <img class="navbarIcon" src="images/html.png" alt="HTML" data-toggle="tooltip" data-placement="bottom" title="HTML" onclick="window.open('https://en.wikipedia.org/wiki/HTML', '_blank');">
+                        <img class="navbarIcon" src="images/css.png" alt="CSS" data-toggle="tooltip" data-placement="bottom" title="CSS" onclick="window.open('https://en.wikipedia.org/wiki/Cascading_Style_Sheets', '_blank');">
+                        <img class="navbarIcon" src="images/jquery.png" alt="JQuery" data-toggle="tooltip" data-placement="bottom" title="JQuery" onclick="window.open('https://jquery.com/', '_blank');">
+                        <img class="navbarIcon" src="images/nodejs.png" alt="Node.JS" data-toggle="tooltip" data-placement="bottom" title="Node.JS" onclick="window.open('https://nodejs.org/en/', '_blank');">
+                        <img class="navbarIcon" src="images/bootstrap.png" alt="Bootstrap" data-toggle="tooltip" data-placement="bottom" title="Bootstrap 4" onclick="window.open('https://v4-alpha.getbootstrap.com/', '_blank');">
        								</div>
        								</div>
        							</div>
        						</div>
        						<a id="aboutMeButtonWrapper" class="scroll" href="#projectsCol">
-       							<button type="button" class="btn btn-outline-primary aboutMeButton animated invisible" >See My Works!</button>
+       							<button id="aboutMeButton1" type="button" class="btn btn-outline-primary aboutMeButton animated invisible" >See My Works!</button>
        						</a>
        					</div>
        				</div>
@@ -64,21 +91,20 @@
             <div class="projectsWrapper">
               		<div class="row" style="height: 100%">
               			<div id="projectCard1" class="col-md-4 animated invisible">
-              						<div class="card">
-
-              				<img class="cardImage" src="images/MadLibs5.PNG" alt="MadLibs" onclick="window.open('http://www.hunterharding.com/MadLibs', '_blank');">
+              						<div class="card" onclick="window.open('http://www.hunterharding.com/MadLibs', '_blank');">
+              				<img class="cardImage" src="images/MadLibs5.PNG" alt="MadLibs">
               				<div class="cardTitle">MadLibs Generator
               				</div>
               				<div class="cardType">Front-End
               				</div>
-              				<div class="cardText">I made this website to easily entertain my coworkers. It even reads your story out in a fancy English voice!
+              				<div class="cardText">I made this website to easily entertain my coworkers. It automatically reads your story out in a fancy English voice!
               				</div>
               			    <div class="cardText"> To-Do: Use Node/Express & Mongo to save Libs.
               				</div>
               						</div>
               			</div>
               			<div id="projectCard2" class="col-md-4 animated invisible">
-              						<div class="card">
+              						<div class="card" onclick="window.open('https://github.com/htharding/PurityBot', '_blank');">
               				<img class="cardImage" src="images/PurityBot5.png" alt="PurityBot">
               				<div class="cardTitle">Purity Bot
               				</div>
@@ -91,19 +117,64 @@
               						</div>
               			</div>
               			<div id="projectCard3" class="col-md-4 animated invisible">
-              						<div class="card">
-              				<img class="cardImage" src="images/MadLibs5.png" alt="MadLibs">
-              				<div class="cardTitle">MadLibs Generator
+              						<div class="card" onclick="window.open('https://github.com/htharding/webportfolio', '_blank');">
+              				<img class="cardImage" src="images/WebPortfolio5.png" alt="Portfolio Website">
+              				<div class="cardTitle">Web Portfolio
               				</div>
               				<div class="cardType">Front-End
               				</div>
-              				<div class="cardText">I made this reddit bot to familiarize myself with Node.js. It finds lewd reddit comments, and convinces the author to repent!
+              				<div class="cardText">I made this web-portfolio to increase my web presence, and test my abilities in web design. 
               				</div>
-              			    <div class="cardText"> To-Do: Make it smarter, Improve socket error handling.
+              			    <div class="cardText"> To-Do: Add contact-me system, add header with social media icons. 
               				</div>
               						</div>
               			</div>
               		</div>
+						<form action="https://formspree.io/htharding@gmail.com" method="POST">
+
+	<div class="row">
+      <div class="col-md-10 mx-auto">
+        <div id="contactCard" class="well well-sm animated invisible">
+          <form class="form-horizontal" action="" method="post">
+          <fieldset>
+            <legend id="contactHeader" class="col-md-8  mx-auto">Want to Collaborate? Send an E-mail Below!</legend>
+    
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-12 control-label mx-auto" for="name">Name</label>
+              <div class="col-md-11 mx-auto">
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+              </div>
+            </div>
+    
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-12 control-label mx-auto" for="email">Your E-mail</label>
+              <div class="col-md-11 mx-auto">
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+              </div>
+            </div>
+    
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-12 control-label mx-auto" for="message">Your message</label>
+              <div class="col-md-11 mx-auto">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+            </div>
+    
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-2  mx-auto">
+                <button id="submitbutton" type="submit" value="Send" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+	</div>
+              		</form>
           	</div>
     	  </div>
     	</div>

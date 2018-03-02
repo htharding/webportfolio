@@ -10,6 +10,10 @@
 	visibility: initial;	
 }
 
+#animatedPortrait{
+margin-top: auto;
+margin-bottom: auto;
+}
 .aboutMeWrapper{
 	background-image: url("images/background65.jpg" );
 	-webkit-background-size: 100% 100%;
@@ -19,9 +23,9 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
-    padding-top: 20vh;
-    padding-right: 13vw;
-    padding-left: 13vw;
+    padding-top: 10vh;
+    padding-right: 14vw;
+    padding-left: 14vw;
     padding-bottom: 0px;
     /*padding-top: 56.25%; 
      (img-height / img-width * container-width) */
@@ -56,13 +60,58 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
-    padding-top: 35px;
+    padding-top: 50px;
     padding-right: 3vw;
     padding-left: 3vw;
     padding-bottom: 0px;
     /*padding-top: 56.25%; 
      (img-height / img-width * container-width) */
                 /* (853 / 1280 * 100) */
+}
+
+.navbarIcon{
+    margin-top: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.contentIcon{
+    margin-left: 4px auto;
+    margin-right: 4px auto; 
+    display: block;
+}
+
+.navbarIcon:hover{
+    transform: translateY(55px);
+    -webkit-transform: translateY(5px);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.tooltip > .tooltip-inner {
+    margin-top: 1px;
+    background-color: #147085;
+    color: #f3eedb;
+    opacity: 0.9; 
+    border: 1px solid white;
+    padding: 3px;
+    font-size: 18px;
+    position: bottom;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3px;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
 }
 
 #introCol{
@@ -107,7 +156,7 @@
 .aboutMeHeader{
 	font-size: 25px;
 	border-bottom: 2px solid #12849f;
-	margin-top: 20px;
+	margin-top: 2px;
 	margin-bottom: 5px;
     font-family: 'Pridi', serif;
 }
@@ -115,6 +164,13 @@
 .aboutMeContent{
 	margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+
+}
+.aboutMeFrameworks{
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .aboutMeCard{
@@ -124,7 +180,7 @@
     opacity: 0.90;
     filter: alpha(opacity=90); /* For IE8 and earlier */
 	margin: 0 auto;
-    margin-bottom: 15vh;
+    margin-bottom: 8vh;
     padding: 20px;
     padding-right: 65px;
     position: relative;
@@ -274,11 +330,61 @@
 
 }
 
+.control-label{
+    text-align: center;
+}
 
+#submitbutton{
+    width: 100% !important;
+}
 
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-15px); }
+#contactCard{
+    background-color: white;
+    opacity: 0.90;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+    margin: 40px;
+    margin-top: 50px;
+    padding-top: 15px;
+    /*margin-bottom: 15vh;
+    
+    padding: 20px;
+    padding-right: 65px;
+    position: relative;*/
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    animation-duration: .75s;   
+}
+
+#contactHeader{
+        font-size: 1.75rem;
+    border-bottom: 2px solid #12849f;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    font-family: 'Pridi', serif;
+    text-align: center;
+    width: 80%;
+    line-height: 113%;
+
+}
+.control-label{
+    font-size: 20px !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#submitbutton{
+	background-color: #12849f;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-style: solid;
+    border-width: 4px 4px 4px 4px;
+    border-color: #12849f;
+}
+
+#submitbutton:hover{
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.4), 5px 5px 15px rgba(0,0,0,0.4),-5px 5px 15px rgba(0,0,0,0.4), 5px -5px 15px rgba(0,0,0,0.4) ;
+    background-color: white;
+    border-style: solid;
+    border-width: 4px 4px 4px 4px;
+    border-color: #12849f;
+    color: #12849f;
 }
 
 @-moz-keyframes mover {
@@ -292,4 +398,90 @@
 @keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-15px); }
+}
+
+
+@media only screen and (max-width: 1275px) {
+    /* your css of 1024 px screen size */
+    .aboutMeWrapper {
+            -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 9px;
+    padding-right: 9px;
+    }
+
+    .aboutMeHeader{
+    font-size: 35px;
+    border-bottom: 2px solid #12849f;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-family: 'Pridi', serif;
+    }
+
+    .mainTitle{
+        margin-top: 10vh;
+    }
+
+    .aboutMeContent{
+        text-align: center;
+    }
+
+    .aboutMeHeader{
+        text-align: center;
+    }
+
+    .aboutMeCard{
+        padding-right: 20px;
+    }
+
+    .cardText{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    /* your css of 640 px screen size */
+        .aboutMeWrapper {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -1300px;
+    padding-left: 9px;
+    padding-right: 9px;
+    }
+
+    .aboutMeHeader{
+    font-size: 20px;
+    border-bottom: 2px solid #12849f;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-family: 'Pridi', serif;
+    }
+
+    .mainTitle{
+        margin-top: 10vh;
+    }
+
+    .aboutMeContent{
+        text-align: center;
+    }
+
+    .aboutMeHeader{
+        text-align: center;
+    }
+
+    .aboutMeCard{
+        padding-right: 20px;
+    }
+
+    .cardText{
+        font-size: 17px;
+    }
+
 }

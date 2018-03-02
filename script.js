@@ -1,4 +1,8 @@
 /*   ON   LOAD     */
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+
 $(document).ready((function() {
 	console.log("Setting Timeout!");
   setTimeout(function(){
@@ -27,7 +31,7 @@ $(document).ready((function() {
   	$('#introLocation').addClass('animated flipInX');
   }
   , 900);
-}))
+}));
 
 $(document).ready((function() {
 	console.log("Setting Timeout!");
@@ -37,18 +41,71 @@ $(document).ready((function() {
   	$('#introArrowButton').addClass('animated flipInX');
   }
   , 1050);
-}))
-;
+}));
+
+$(document).ready((function() {
+	console.log("Setting Timeout!");
+  setTimeout(function(){
+  	console.log("Timeout RAN!");
+  	$('#github').removeClass('invisible');
+  	$('#github').addClass('animated fadeIn');
+  }
+  , 1300);
+}));
+
+$(document).ready((function() {
+	console.log("Setting Timeout!");
+  setTimeout(function(){
+  	console.log("Timeout RAN!");
+  	$('#twitter').removeClass('invisible');
+  	$('#twitter').addClass('animated fadeIn');
+  }
+  , 1450);
+}));
+
+$(document).ready((function() {
+	console.log("Setting Timeout!");
+  setTimeout(function(){
+  	console.log("Timeout RAN!");
+  	$('#linkedin').removeClass('invisible');
+  	$('#linkedin').addClass('animated fadeIn');
+  }
+  , 1600);
+}));
+
+$(document).ready((function() {
+	console.log("Setting Timeout!");
+  setTimeout(function(){
+  	console.log("Timeout RAN!");
+  	$('#resume').removeClass('invisible');
+  	$('#resume').addClass('animated fadeIn');
+  }
+  , 1750);
+}));
 
 
 
 
-/*   SCROLLIES   */
+/*   HELPS MOBILE   */
+$(document).ready((function() {
 
+    if (($(window).width()/$(window).height()) < 1.4469) {
+        $('#aboutMeCard').removeClass("animated invisible ");
+        $('#aboutMeButton1').removeClass("animated invisible ");
+        $('#projectCard1').removeClass("animated invisible ");
+        $('#projectCard2').removeClass("animated invisible ");
+        $('#projectCard3').removeClass("animated invisible ");
+        $('#contactCard').removeClass("animated invisible ");
+ 
 
+    };
 
+}));
+
+	console.log(($(window).width()/$(window).height()));
 	/*introCol hide content*/
 	$(window).scroll(function(){
+		if (($(window).width()/$(window).height()) > 1.4469){
 	    if ($(this).scrollTop() < 35) {	
 	   $('#introTitle').removeClass('flipOutX');
 	   setTimeout(function(){
@@ -75,6 +132,7 @@ $(document).ready((function() {
        setTimeout(function(){
        	$('#introArrowButton').addClass('flipInX');
        }, 450);
+   };
 	   console.log("Adding flipInX");
 	   /*if($( ".aboutMeCard" ).hasClass( "invisible" )){
 		 $('.aboutMeCard').removeClass('invisible');
@@ -89,7 +147,6 @@ $(document).ready((function() {
 		console.log("Removing FadeIn");
 		$('.aboutMeCard').addClass('fadeOut');
 		console.log("Adding fadeOut");*/
-    };
 
 	if ($(this).scrollTop() > 36) {
 		$('#introTitle').removeClass('flipInX');
@@ -102,6 +159,7 @@ $(document).ready((function() {
 		setTimeout(function(){
 			$('#introArrowButton').removeClass('flipInX');
        }, 450);
+
 		console.log("Removing flipInX");
 		if($( "#introTitle" ).hasClass( "flipOutX" )){
 		} else{
@@ -123,7 +181,7 @@ $(document).ready((function() {
 
 
 	/*show the main body, remove if too early*/
-    if ($(this).scrollTop() > 750 && $(this).scrollTop() < 1100) {	
+    if ($(this).scrollTop() > 630 && $(this).scrollTop() < 1100) {	
 	   $('.aboutMeCard').removeClass('fadeOut');
 	   	setTimeout(function(){
 		 	$('.aboutMeButton').removeClass('fadeOut');
@@ -198,11 +256,12 @@ $(document).ready((function() {
 	   setTimeout(function(){
 	   	$('#projectCard3').removeClass('fadeOut');
 	   }, 300);
+	   
+	   	   setTimeout(function(){
+	   	$('#contactCard').removeClass('fadeOut');
+	   }, 450);
 
-	   /* PLACE HOLDER FOR CONTACT ME
-	   setTimeout(function(){
-	   	$('#introArrowButton').removeClass('flipOutX');
-	   }, 450);*/
+
 
 
 	   console.log("Removing flipOutX");
@@ -230,6 +289,17 @@ $(document).ready((function() {
 		 $('#projectCard3').addClass('visible');
 		};
        }, 300);
+	   
+	    setTimeout(function(){
+       	$('#contactCard').addClass('fadeIn');
+        if($( "#contactCard" ).hasClass( "invisible" )){
+		 $('#contactCard').removeClass('invisible');
+		 console.log("Removing Invisible");
+		 $('#contactCard').addClass('visible');
+		};
+       }, 450);
+
+
        /* PLACE HOLDER FOR CONTACT ME
        setTimeout(function(){
        	$('#introArrowButton').addClass('flipInX');
@@ -250,7 +320,7 @@ $(document).ready((function() {
 		console.log("Removing FadeIn");
 		$('.aboutMeCard').addClass('fadeOut');
 		console.log("Adding fadeOut");*/
-    };
+	};
 
 	if ($(this).scrollTop() < 1490) {
 		$('#projectCard1').removeClass('fadeIn');
@@ -260,6 +330,9 @@ $(document).ready((function() {
 		setTimeout(function(){
 			$('#projectCard3').removeClass('fadeIn');
        }, 300);
+	   setTimeout(function(){
+			$('#contactCard').removeClass('fadeIn');
+       }, 450);
 		/*PLACE HOLDER FOR CONTACT ME
 		setTimeout(function(){
 			$('#introArrowButton').removeClass('flipInX');
@@ -275,6 +348,9 @@ $(document).ready((function() {
 		setTimeout(function(){
 		 $('#projectCard3').addClass('fadeOut');
        }, 300);
+	   setTimeout(function(){
+		 $('#contactCard').addClass('fadeOut');
+       }, 450);
 
 		/* PLACEHOLDER FOR CONTACT ME
 		setTimeout(function(){
@@ -287,7 +363,7 @@ $(document).ready((function() {
     };	
 
 
-});
+}});
 
 
 
