@@ -78,9 +78,11 @@ margin-bottom: auto;
 }
 
 .contentIcon{
-    margin-left: 4px auto;
-    margin-right: 4px auto; 
-    display: block;
+    margin-top: 5px;
+    margin-left: 9px;
+    margin-right: 9px;
+    height: 3.25em;
+    width: 3.25em;
 }
 
 .navbarIcon:hover{
@@ -88,8 +90,8 @@ margin-bottom: auto;
     -webkit-transform: translateY(5px);
     transition-duration: 0.2s;
     cursor: pointer;
-    width: 2.5em;
-    height: 2.5em;
+    width: 3.5em;
+    height: 3.5em;
 }
 
 .tooltip > .tooltip-inner {
