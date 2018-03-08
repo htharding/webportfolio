@@ -1,6 +1,8 @@
-# Hunter Harding's Web Portoflio!
+# Attractive Web Portoflio
 
 This is my personal web portfolio that I built to increase my web presence, create a vector that people can easily contact me at, and to show that I have successfully taught myself a great deal of front-end development concepts. It has links to linkedIn/Twitter/Github/resume.pdf, a content body, projects panel, and a contact me page. 
+
+I have created exact instructions on how to host this website yourself, from creating your own free web server, to moving the portfolio onto the web server. Please read the USAGE section, and then move onto the INSTALLING section!
 
 ## Usage
 
@@ -21,7 +23,7 @@ You must have a web host in order for this to work online. I followed this tutor
 
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html
 
-Once you have this complete, you just drag the files in this repo to a directory on your webserver, and you're good to go!
+Once you have this complete, connect to your webserver using an FTP program, and simply drag the files in this repo to a directory on your webserver, and you're good to go!
 
 ```
 
