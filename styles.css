@@ -355,6 +355,7 @@ margin-bottom: auto;
     filter: alpha(opacity=90); /* For IE8 and earlier */
     margin: 40px;
     margin-top: 50px;
+    margin-bottom: 20px;
     padding-top: 15px;
     /*margin-bottom: 15vh;
     
@@ -376,6 +377,8 @@ margin-bottom: auto;
     line-height: 113%;
 
 }
+
+
 .control-label{
     font-size: 20px !important;
     font-family: 'Montserrat', sans-serif !important;
@@ -396,6 +399,43 @@ margin-bottom: auto;
     border-width: 4px 4px 4px 4px;
     border-color: #12849f;
     color: #12849f;
+}
+
+#Footer{
+    margin-bottom: 20px;
+}
+
+#FooterText{
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    font-family: 'Pridi', serif;
+    opacity: 0.6;
+}
+
+#Website{
+    color: #0000EE;
+    opacity: 0.6;
+}
+
+#Website:hover{
+    transform: translateY(55px);
+    -webkit-transform: translateY(5px);
+    transition-duration: 0.2s;
+    cursor: pointer;    
+}
+
+#Github{
+    color: #0000EE;
+    opacity:0.6;
+}
+
+#Github:hover{
+    transform: translateY(55px);
+    -webkit-transform: translateY(5px);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    opacity    
 }
 
 @-moz-keyframes mover {
