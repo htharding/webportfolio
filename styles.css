@@ -3,11 +3,11 @@
 
 
 .visible{
-	visibility: visible;
+    visibility: visible;
 }
 
 .invisible{
-	visibility: initial;	
+    visibility: initial;    
 }
 
 #animatedPortrait{
@@ -15,8 +15,8 @@ margin-top: auto;
 margin-bottom: auto;
 }
 .aboutMeWrapper{
-	background-image: url("images/background65.jpg" );
-	-webkit-background-size: 100% 100%;
+    background-image: url("images/background65.jpg" );
+    -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -77,6 +77,15 @@ margin-bottom: auto;
     width: 2.5em;
 }
 
+.navbarIcon:hover{
+    transform: translateY(55px);
+    -webkit-transform: translateY(5px);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    width: 2.75em;
+    height: 2.75em;
+}
+
 .contentIcon{
     margin-top: 5px;
     margin-left: 9px;
@@ -85,7 +94,7 @@ margin-bottom: auto;
     width: 3.25em;
 }
 
-.navbarIcon:hover{
+.contentIcon:hover{
     transform: translateY(55px);
     -webkit-transform: translateY(5px);
     transition-duration: 0.2s;
@@ -150,21 +159,21 @@ margin-bottom: auto;
 }
 
 #aboutMeCol{
-	padding: 0px !important;
-	margin: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
 
 }
 
 .aboutMeHeader{
-	font-size: 25px;
-	border-bottom: 2px solid #12849f;
-	margin-top: 2px;
-	margin-bottom: 5px;
+    font-size: 25px;
+    border-bottom: 2px solid #12849f;
+    margin-top: 2px;
+    margin-bottom: 5px;
     font-family: 'Pridi', serif;
 }
 
 .aboutMeContent{
-	margin-bottom: 30px;
+    margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 
@@ -176,18 +185,18 @@ margin-bottom: auto;
 }
 
 .aboutMeCard{
-	width: 100%;
-	height: 100%;
-	background-color: white;
+    width: 100%;
+    height: 100%;
+    background-color: white;
     opacity: 0.90;
     filter: alpha(opacity=90); /* For IE8 and earlier */
-	margin: 0 auto;
+    margin: 0 auto;
     margin-bottom: 8vh;
     padding: 20px;
     padding-right: 65px;
     position: relative;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	animation-duration: .75s;
+    animation-duration: .75s;
 
 }
 
@@ -205,11 +214,11 @@ margin-bottom: auto;
 }
 
 .card:hover{
-	transform: translateY(-5px);
+    transform: translateY(-5px);
     -webkit-transform: translateY(-5px);
     transition-duration: 0.2s;
     box-shadow: -5px -5px 15px rgba(0,0,0,0.4), 5px 5px 15px rgba(0,0,0,0.4),-5px 5px 15px rgba(0,0,0,0.4), 5px -5px 15px rgba(0,0,0,0.4) ;
- 	cursor: pointer;
+    cursor: pointer;
 
 }
 .cardType{
@@ -373,7 +382,7 @@ margin-bottom: auto;
 }
 
 #submitbutton{
-	background-color: #12849f;
+    background-color: #12849f;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-style: solid;
     border-width: 4px 4px 4px 4px;
