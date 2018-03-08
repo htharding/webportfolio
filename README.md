@@ -1,5 +1,7 @@
 # Attractive Web Portoflio
 
+View an example of this portfolio here: www.hunterharding.com
+
 This is my personal web portfolio that I built to increase my web presence, create a vector that people can easily contact me at, and to show that I have successfully taught myself a great deal of front-end development concepts. It has links to linkedIn/Twitter/Github/resume.pdf, a content body, projects panel, and a contact me page. 
 
 I have created exact instructions on how to host this website yourself, from creating your own free web server, to moving the portfolio onto the web server. Please read the USAGE section, and then move onto the INSTALLING section!
